@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-image: url("hero_background__ep8j6kim532a_large.png");
+        color:white;
+        /* background-color: black; */
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+
+    }
+   .form-container {
+   max-width: 300px;
+   padding: 10px;
+   background: none;
+   border-radius: 20px;
+   margin-left: 40%;
+   float:center;
+   }
+   .form-container input[type=text], .form-container input[type=password] {
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   border: none;
+   background: #f1f1f1;
+   border-radius: 5px;
+   font-family: Arial, Helvetica, sans-serif;
+   }
+   .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  font-family: 'Oswald', sans-serif;
+  outline: none;
+   }
+   .form-container .btn {
+  background:none;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+  text-decoration: double;
+  font-size: 20px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+/* .form-container .cancel {
+  background-color: red;
+  font-family: 'Oswald', sans-serif;
+} */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+}
+.btn1{
+  background:none;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+}
+.btn1:hover{
+  /* opacity: 1; */
+}
+
+
+</style>
+<body>
+    <img align="center" src="Screenshot (70).png" alt="sneakfit" height="100px" width="auto">
+    <!-- <div class="form-popup" id="myForm"> -->
+        <form action="" class="form-container" id="SignInForm">
+          <h1>YOUR ACCOUNT FOR EVERYTHING SNEAKFIT</h1>
+      
+          <!-- <label for="email"><b>Email</b></label> -->
+          <input type="text" placeholder="Email address" id="emailid" name="email" required>
+      
+          <!-- <label for="psw"><b>Password</b></label> -->
+          <input type="password" placeholder="Password" id="password" name="psw" required>
+      
+          <button type="submit" onclick="writeData()" class="btn">SIGN IN</button>
+          <button class="btn"><a style="text-decoration: none; color: white;" href="index.html">GO HOME</button></a>
+        </form>
+
+        <div class="img">
+          <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1358785002%3A1680067913657600&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=en&ifkv=AQMjQ7Qg-WCwwxwo5Z_CpdA4hIN54hsooQsfC2dkvBLLlhIa6aDIusbF7loT_ev-ah8ZcOxfiHwtRQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img style="height: 2rem;" src="https://e1.pxfuel.com/desktop-wallpaper/297/673/desktop-wallpaper-google-g-logo-google-logo-black-background.jpg" alt="google"></a>
+          <a href="https://www.facebook.com/login/"><img style="height: 2rem; margin-left: 3%;" src="https://cdn-icons-png.flaticon.com/512/6033/6033716.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/accounts/login/"><img style="height: 2rem; margin-left: 3%;" src="insta.jpg" alt="instagram"></a>
+        </div>
+
+        
+
+        <!-- </div> -->
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+
+</body>
+</html>
